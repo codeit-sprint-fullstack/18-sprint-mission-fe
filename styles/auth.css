@@ -1,9 +1,14 @@
+body {
+  background-color: #fcfcfc;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  padding: 1.5rem 1rem;
 }
 
 .container {
@@ -28,7 +33,7 @@ main {
   width: min(24.75rem, 396px);
 }
 
-.login-form {
+.auth-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -82,7 +87,7 @@ main {
   cursor: pointer;
 }
 
-.login-button {
+.auth-button {
   width: 100%;
   padding: 0.8em 0;
   border: none;
@@ -92,6 +97,7 @@ main {
   color: var(--secondary-100);
   font-size: 1.25rem;
   line-height: 1.6;
+  cursor: pointer;
 }
 
 .sns-login {
@@ -118,7 +124,7 @@ main {
   width: 2.625rem;
 }
 
-.signup-container {
+.auth-guide {
   display: flex;
   justify-content: center;
   gap: 0.25rem;
@@ -129,6 +135,6 @@ main {
   line-height: 1.7;
 }
 
-.signup-link {
+.auth-link {
   color: var(--primary-100);
 }
