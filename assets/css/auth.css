@@ -6,63 +6,62 @@ body {
 .auth-container,
 .auth-wrapper {
   width: 100%;
+  max-width: 40rem;
 }
 
 .auth-container {
-  max-width: 640px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 60px 16px;
+  gap: 2.5rem;
+  padding: 3.75rem 1rem;
 }
 
 .auth-header img {
-  width: 396px;
+  width: 24.75rem;
 }
 
 .auth-wrapper {
-  max-width: 640px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .auth-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .auth-social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   background-color: #e6f2ff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .auth-social p {
-  font-size: 16px;
-  font-weight: 500px;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.625;
   color: var(--gray-800);
 }
 
 .auth-social-btn {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .auth-prompt {
   text-align: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2;
 }
 
 .auth-prompt a {
   color: var(--primary-100);
-  margin-left: 4px;
+  margin-left: 0.25rem;
 }

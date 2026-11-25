@@ -41,8 +41,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 0 200px;
+  height: 4.375rem;
+  padding: 0 12.5rem;
   background-color: #fff;
   border-bottom: 1px solid #dfdfdf;
   position: fixed;
@@ -59,35 +59,35 @@ body {
   align-items: center;
   flex-shrink: 0;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 26px;
-  color: #f3f4f6;
-  background-color: #3692ff;
-  border-radius: 8px;
-  width: 128px;
-  height: 48px;
+  line-height: 1.625;
+  color: var(--gray-100);
+  background-color: var(--primary-100);
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 3rem;
   transition: background-color 0.2s;
 }
 
 .btn-login:hover,
 .btn-cta:hover {
-  background-color: #1967d6;
+  background-color: var(--primary-200);
 }
 
 .btn-login:active,
 .btn-cta:active {
-  background-color: #1251aa;
+  background-color: var(--primary-300);
 }
 
 .main {
   flex: 1;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 .hero {
   width: 100%;
-  height: 540px;
+  height: 33.75rem;
   background-color: #cfe5ff;
   display: flex;
   align-items: end;
@@ -98,44 +98,44 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1110px;
+  max-width: 69.375rem;
   margin: 0 auto;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin-bottom: 60px;
+  gap: 2rem;
+  margin-bottom: 3.75rem;
   flex-shrink: 0;
 }
 
 .hero-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.4;
-  color: #374151;
+  color: var(--gray-700);
 }
 
 .btn-cta {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 357px;
-  height: 56px;
+  width: 22.3125rem;
+  height: 3.5rem;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 32px;
-  color: #f9fafb;
-  background-color: #3692ff;
-  border-radius: 40px;
+  line-height: 1.25;
+  color: var(--gray-50);
+  background-color: var(--primary-100);
+  border-radius: 2.5rem;
   transition: background-color 0.2s;
 }
 
 .feature-item {
   width: 100%;
-  height: 720px;
+  height: 45rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +144,7 @@ body {
 .feature-container {
   background-color: #fcfcfc;
   width: 100%;
-  max-width: 988px;
+  max-width: 61.75rem;
   display: flex;
   justify-content: center;
 }
@@ -153,7 +153,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 4rem;
   flex-shrink: 0;
 }
 
@@ -167,39 +167,39 @@ body {
 
 .feature-label {
   display: inline-block;
-  margin-bottom: 12px;
-  color: #3692ff;
-  font-size: 18px;
+  margin-bottom: 0.75rem;
+  color: var(--primary-100);
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.45;
 }
 
 .feature-textbox {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .feature-title {
-  color: #374151;
-  font-size: 40px;
+  color: var(--gray-700);
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.02em;
 }
 
 .feature-desc {
-  color: #374151;
-  font-size: 24px;
+  color: var(--gray-700);
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 1.34;
 }
 
 .footer {
-  background-color: #111827;
-  padding: 32px 200px;
+  background-color: var(--gray-900);
+  padding: 2rem 12.5rem;
   width: 100%;
-  height: 160px;
+  height: 10rem;
 }
 
 .footer-container {
@@ -208,28 +208,28 @@ body {
 }
 
 .copyright {
-  color: #9ca3af;
-  font-size: 16px;
+  color: var(--gray-400);
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
 }
 
 .terms {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .terms a {
-  color: #e5e7eb;
+  color: var(--gray-200);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
 }
 
 .sns {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .sns a {
@@ -241,18 +241,18 @@ body {
 .input-field {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .input-text {
   width: 100%;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   color: var(--gray-800);
   background-color: var(--gray-100);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.625;
   transition: border-color 0.2s;
 }
@@ -277,7 +277,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 24px;
+  right: 1.5rem;
   cursor: pointer;
 }
 
@@ -286,7 +286,7 @@ body {
 }
 
 .input-label {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.45;
   font-weight: 700;
   color: var(--gray-800);
@@ -298,10 +298,10 @@ body {
   width: 100%;
   background-color: var(--primary-100);
   border: none;
-  padding: 16px 0;
-  border-radius: 40px;
+  padding: 0.8em 0;
+  border-radius: 2.5rem;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: #fff;
   cursor: pointer;
