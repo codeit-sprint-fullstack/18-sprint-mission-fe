@@ -4,7 +4,7 @@
 
 ## 배포 주소
 
-- 배포 후 추가 예정
+- https://pandamarket-eunjeong.netlify.app/
 
 ## 페이지
 
