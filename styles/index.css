@@ -1,0 +1,249 @@
+:root {
+  --header-height: 4.375rem;
+}
+
+body {
+  margin-top: min(var(--header-height), 70px);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: min(var(--header-height), 70px);
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+main {
+  background-color: #fcfcfc;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-container {
+  padding-bottom: 3.75rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--secondary-700);
+}
+
+.hero {
+  align-items: end;
+  height: min(33.75rem, 540px);
+  background-color: #cfe5ff;
+}
+
+.banner {
+  align-items: end;
+  height: min(33.75rem, 540px);
+  background-color: #cfe5ff;
+  margin-top: 8.125rem;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 9px 200px;
+}
+
+.gnb-logo {
+  width: min(9.5625rem, 153px);
+  height: main(3.1875rem, 51px);
+  cursor: pointer;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-100);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 8rem;
+  min-width: min(8rem, 128px);
+  max-width: 128px;
+  max-height: 48px;
+  height: 3rem;
+  padding: 0 23px;
+  border-radius: 8px;
+
+  color: var(--secondary-100);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.625;
+}
+
+.shortcut-button {
+  height: 3.5rem;
+  min-width: 22.3125rem;
+  padding: 0 7.75rem;
+  border-radius: 2.5rem;
+
+  color: var(--secondary-50);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.hero-content-container {
+  gap: 0.4375rem;
+  align-items: flex-end;
+}
+
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-self: center;
+}
+
+.hero-img {
+  width: min(46.625rem, 746px);
+  height: min(21.25rem, 340px);
+}
+
+.feature-container {
+  padding: 8.625rem 0;
+  margin: 0 auto;
+}
+
+.feature-content-container {
+  gap: 4rem;
+  width: fit-content;
+  min-width: min(61.75rem, 988px);
+  height: auto;
+  background-color: #fcfcfc;
+}
+
+.content-img {
+  width: min(36.75rem, 588px);
+  height: min(27.75rem, 444px);
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.feature-content.right {
+  text-align: right;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-content .eyebrow {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.625;
+  color: var(--primary-100);
+}
+
+.feature-content .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.05rem;
+  color: var(--secondary-700);
+}
+
+.feature-content .description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--secondary-700);
+}
+
+.banner-content-container {
+  gap: 4.3125rem;
+}
+
+.banner-img {
+  width: min(46.625rem, 746px);
+  height: min(24.8125rem, 397px);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+  background-color: var(--secondary-900);
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding: 32px 200px;
+}
+
+.footer-content-container > nav {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.footer-content-container > nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--secondary-200);
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--secondary-400);
+}
+
+.sns-container {
+  display: flex;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.sns-container img {
+  width: 1.25rem;
+  height: 1.25rem;
+}

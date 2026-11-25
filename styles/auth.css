@@ -1,0 +1,140 @@
+body {
+  background-color: #fcfcfc;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.title-logo-img {
+  /* width: 396px; */
+  width: min(24.75rem, 396px);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-label {
+  color: var(--secondary-800);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: var(--secondary-100);
+
+  color: var(--secondary-400);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.input-field.password {
+  padding-right: 3.75em;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 1px solid var(--primary-100);
+}
+
+.toggle-password-btn {
+  width: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.8em 0;
+  border: none;
+  background-color: var(--secondary-400);
+  border-radius: 40px;
+
+  color: var(--secondary-100);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.sns-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  background-color: #e6f2ff;
+}
+
+.sns-login-title {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.sns-login-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.sns-login-buttons img {
+  width: 2.625rem;
+}
+
+.auth-guide {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+
+  color: var(--secondary-800);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.auth-link {
+  color: var(--primary-100);
+}
