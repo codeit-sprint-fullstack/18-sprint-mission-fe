@@ -1,0 +1,239 @@
+/*
+  1rem = 16px 기준으로 설정 (브라우저 글자 크기 설정을 바꾸면 전체가 같이 커짐)
+
+  레이아웃 구조
+  - section, header, footer: 배경색 담당 (화면 가로 전체)
+  - .inner: 내용 담당 (최대 1920px, 가운데 정렬)
+*/
+
+:root {
+  --color-primary: #3692ff;
+  --color-text: #374151;
+  --color-sky: #cfe5ff;
+  --color-card: #fcfcfc;
+  --color-line: #dfdfdf;
+  --color-footer: #111827;
+  --color-footer-text: #9ca3af;
+  --color-footer-link: #e5e7eb;
+
+  --page-side: 12.5rem; /* 200px */
+  --section-gap: 8.625rem; /* 138px */
+}
+
+/* 기본 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.inner {
+  max-width: 120rem; /* 1920px */
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 헤더 */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-line);
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.3rem; /* 69px + 아래 선 1px = 70px */
+  padding: 0 var(--page-side);
+}
+
+.logo img {
+  width: 9.5rem; /* 153px */
+}
+
+.btn-login {
+  width: 8rem; /* 128px */
+  height: 3rem; /* 48px */
+  border-radius: 0.5rem; /* 8px */
+}
+
+/* 히어로 */
+
+.hero {
+  background-color: var(--color-sky);
+}
+
+.hero .inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem; /* 8px */
+  height: 33.7rem; /* 540px */
+}
+
+.hero-text {
+  width: 22.3rem; /* 357px */
+  margin-bottom: 6.3rem; /* 101px */
+}
+
+.btn-items {
+  width: 22.3rem; /* 357px */
+  height: 3.5rem; /* 56px */
+  margin-top: 2rem; /* 32px */
+  border-radius: 2.5rem; /* 40px */
+  font-size: 1.25rem; /* 20px */
+}
+
+.hero-img {
+  width: 46.6rem; /* 746px */
+}
+
+/* 기능 소개 */
+
+.feature {
+  padding: var(--section-gap) 0;
+}
+
+.feature-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; /* 64px */
+  width: 61.7rem; /* 988px */
+  height: 27.7rem; /* 444px */
+  margin: 0 auto;
+  background-color: var(--color-card);
+}
+
+.feature-img {
+  flex-shrink: 0;
+  width: 36.75rem; /* 588px */
+}
+
+.feature-text {
+  white-space: nowrap; /* 줄바꿈은 <br>로만 */
+}
+
+.feature-label {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.feature-text h2 {
+  margin-top: 0.75rem; /* 12px */
+}
+
+.feature-desc {
+  margin-top: 1.5rem; /* 24px */
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.3;
+}
+
+.feature-reverse .feature-card {
+  flex-direction: row-reverse;
+}
+
+.feature-reverse .feature-text {
+  text-align: right;
+}
+
+/* 하단 배너 */
+
+.banner {
+  background-color: var(--color-sky);
+}
+
+/* 배너 위 연회색 띠 */
+.banner::before {
+  content: "";
+  display: block;
+  height: 8.625rem; /* 138px */
+  background-color: var(--color-card);
+}
+
+.banner .inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem; /* 8px */
+  height: 33.75rem; /* 540px */
+}
+
+.banner-text {
+  width: 22.3rem; /* 357px */
+  margin-bottom: 10.8rem; /* 173px */
+}
+
+.banner-img {
+  width: 46.625rem; /* 746px */
+}
+
+/* 푸터 */
+
+footer {
+  background-color: var(--color-footer);
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 10rem; /* 160px */
+  padding: 2rem var(--page-side) 0; /* 위 32px */
+}
+
+.copyright {
+  color: var(--color-footer-text);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.875rem; /* 30px */
+  color: var(--color-footer-link);
+}
+
+.sns {
+  display: flex;
+  gap: 0.75rem; /* 12px */
+}
+
+.sns img {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem;
+}
