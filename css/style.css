@@ -7,14 +7,15 @@
 */
 
 :root {
-  --color-primary: #3692ff;
-  --color-text: #374151;
+  /* 팔레트(palette.css)에 있는 색은 팔레트 변수를 가리킨다 */
+  --color-primary: var(--blue-100);
+  --color-text: var(--gray-700);
   --color-sky: #cfe5ff;
   --color-card: #fcfcfc;
   --color-line: #dfdfdf;
-  --color-footer: #111827;
-  --color-footer-text: #9ca3af;
-  --color-footer-link: #e5e7eb;
+  --color-footer: var(--gray-900);
+  --color-footer-text: var(--gray-400);
+  --color-footer-link: var(--gray-200);
 
   --page-side: 12.5rem; /* 200px */
   --section-gap: 8.625rem; /* 138px */
