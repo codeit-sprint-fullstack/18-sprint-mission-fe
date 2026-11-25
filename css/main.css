@@ -1,0 +1,188 @@
+main {
+  width: 100vw;
+  padding-top: 4.375rem;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+main .hero-section {
+  width: 100%;
+  height: 33.75rem;
+  background-color: #cfe5ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-section .container {
+  height: 21.25rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.hero-section .container .hero-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.hero-section .container .hero-info .hero-slogun {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 2rem;
+  color: #374151;
+}
+
+.hero-section .container .hero-info .hero-watch-btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0;
+  color: #f9fafb;
+  padding: 1rem 7.75rem;
+  background-color: #3692ff;
+  border-radius: 40px;
+  margin-bottom: 3.75rem;
+}
+
+.hero-section .container .hero-image {
+  height: 100%;
+  flex-shrink: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-section .container .hero-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-section {
+  width: 100%;
+  margin-bottom: 8.625rem;
+}
+
+.card-section .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-section .container .card-wrap {
+  width: 100%;
+  padding: 8.625rem 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.card-section .container .card-wrap .card {
+  max-width: 61.75rem;
+  max-height: 27.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  background-color: #fcfcfc;
+}
+
+.card-section .container .card-wrap .card:hover {
+  cursor: pointer;
+}
+
+.card-section .container .card-wrap .card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-section .container .card-wrap .card.reverse .card-message-wrap {
+  text-align: right;
+}
+/* 
+.card-wrap .card .card-image-wrap {
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.card-wrap .card .card-image-wrap img {
+  height: 100%;
+  object-fit: cover;
+} */
+
+.card-wrap .card .card-message-wrap .badge {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+  color: #3692ff;
+  margin-bottom: 12px;
+}
+
+.card-wrap .card .card-message-wrap .message-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 2%;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+}
+
+.card-wrap .card .card-message-wrap .message-specific {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.bottom-section {
+  width: 100%;
+  height: 33.75rem;
+  background-color: #cfe5ff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottom-section .container {
+  height: 24.8125rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bottom-section .container .bottom-message-wrap {
+  height: 100%;
+  margin-right: 4.3125rem;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-section .container .bottom-message-wrap .bottom-message {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #374151;
+  margin-bottom: 3.75rem;
+  white-space: nowrap;
+}
+
+.bottom-section .container .bottom-image-wrap {
+  height: 100%;
+  flex-shrink: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottom-section .container .bottom-image-wrap img {
+  width: 100%;
+  object-fit: cover;
+}

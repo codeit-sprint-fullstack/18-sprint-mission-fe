@@ -1,0 +1,134 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .logo {
+  padding: 0 122px 40px;
+}
+
+.container .form-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .form-wrap .input-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form-wrap .input-wrap label {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+  color: var(--gray-800);
+}
+
+.form-wrap .input-wrap input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  background-color: var(--gray-100);
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+}
+
+.form-wrap .input-wrap input::placeholder {
+  color: var(--gray-400);
+}
+
+.form-wrap .input-wrap input:focus {
+  outline-color: var(--primary-100);
+}
+
+.form-wrap .input-wrap .password-input-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-wrap .input-wrap .password-input-wrap .vision-mark {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.form-wrap .form-button {
+  padding: 1rem 7.75rem;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--gray-400);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0;
+  color: var(--gray-100);
+  cursor: pointer;
+}
+
+.container .social-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.4375rem;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+}
+
+.container .social-login-wrapper .social-login-title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+  color: var(--gray-800);
+}
+
+.container .social-login-wrapper .social-login-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.bottom-nav .bottom-nav-message {
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  color: var(--gray-800);
+}
+
+.bottom-nav a.bottom-link {
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--primary-100);
+  text-decoration: underline;
+}
