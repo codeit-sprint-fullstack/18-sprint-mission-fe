@@ -4,8 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>판다마켓</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/auth.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
   </head>
   <body>
-    회원가입
+    <main class="auth-container">
+      <header class="auth-header">
+        <h1>
+          <a href="/">
+            <img src="../assets/images/logo.svg" alt="판다마켓" />
+          </a>
+        </h1>
+      </header>
+      <section class="auth-wrapper">
+        <form class="auth-form">
+          <div class="input-field">
+            <label for="email" class="input-label">이메일</label>
+            <input type="email" id="email" placeholder="이메일을 입력해주세요" class="input-text" />
+          </div>
+          <div class="input-field">
+            <label for="nickname" class="input-label">닉네임</label>
+            <input type="text" name="nickname" id="nickname" placeholder="닉네임을 입력해주세요" class="input-text" />
+          </div>
+          <div class="input-field">
+            <label for="password" class="input-label">비밀번호</label>
+            <div class="input-password">
+              <input type="password" id="password" placeholder="비밀번호를 입력해주세요" class="input-text" />
+              <img class="btn-toggle-password" src="../assets/images/auth/btn_visibility_off_24px.svg" alt="비밀번호 보이기" />
+              <img class="btn-toggle-password disabled" src="../assets/images/auth/btn_visibility_on_24px.svg" alt="비밀번호 보이기" />
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="confirm-password" class="input-label">비밀번호 확인</label>
+            <div class="input-password">
+              <input type="password" id="confirm-password" placeholder="비밀번호를 다시 한 번 입력해주세요" class="input-text" />
+              <img class="btn-toggle-password" src="../assets/images/auth/btn_visibility_off_24px.svg" alt="비밀번호 보이기 버튼" />
+              <img class="btn-toggle-password disabled" src="../assets/images/auth/btn_visibility_on_24px.svg" alt="비밀번호 보이기 버튼" />
+            </div>
+          </div>
+          <button type="submit" class="btn-large disabled">회원가입</button>
+        </form>
+        <div class="auth-social">
+          <p>간편 로그인하기</p>
+          <div class="auth-social-btn">
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" class="google">
+              <img src="../assets/images/auth/login_social_google.svg" alt="구글 로그인" />
+            </a>
+            <a href="https://www.kakaocorp.com/page/" target="_blank" rel="noopener noreferrer" class="kakao">
+              <img src="../assets/images/auth/login_social_kakao.svg" alt="카카오 로그인" />
+            </a>
+          </div>
+        </div>
+        <div class="auth-prompt">
+          이미 회원이신가요?
+          <a href="./login.html">로그인</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

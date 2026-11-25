@@ -55,14 +55,14 @@ body {
   gap: 16px;
 }
 
-.prompt-signup {
+.auth-prompt {
   text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
 }
 
-.prompt-signup a {
+.auth-prompt a {
   color: var(--primary-100);
   margin-left: 4px;
 }
