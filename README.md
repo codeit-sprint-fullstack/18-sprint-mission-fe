@@ -6,7 +6,7 @@
 
 - **Live Demo:** [판다마켓 웹사이트 바로가기](https://panda-market-youngmi-kang.netlify.app)
 
----
+<br>
 
 ## 🛠️ 기술 스택
 
@@ -14,7 +14,7 @@
 - **Deploy & Analytics:** Netlify, Google Analytics
 - **Version Control:** Git, GitHub
 
----
+<br>
 
 ## 📁 폴더 구조
 
@@ -30,7 +30,7 @@
 └── signup.html         # 회원가입 페이지
 ```
 
----
+<br>
 
 ## 💡 구현 포인트
 
