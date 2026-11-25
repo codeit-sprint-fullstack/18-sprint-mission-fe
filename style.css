@@ -1,0 +1,306 @@
+:root {
+  --primary-100: #3692ff;
+  --primary-200: #1967d6;
+  --primary-300: #1251aa;
+  --error-red: #f74747;
+  --secondary-900: #111827;
+  --secondary-800: #1f2937;
+  --secondary-700: #374151;
+  --secondary-600: #4b5563;
+  --secondary-500: #6b7280;
+  --secondary-400: #9ca3af;
+  --secondary-200: #e5e7eb;
+  --coolgrey-100: #f3f4f6;
+  --secondary-grey50: #f9fafb;
+}
+
+/* 전체 공통 설정 */
+html {
+  font-size: 100%; /* 글자사이즈,너비,높이rem, 마진,패딩,자간,행높이 em */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Pretendard Variable", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #374151;
+  word-break: keep-all;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 4.375rem; /* 70px */
+  padding: 0.5em 12.5em; /* 8px 200px */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+/* 헤더 컨테이너 */
+.header-container {
+  width: 100%;
+  max-width: 120rem; /* 1920px; */
+  height: 100%;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 헤더 로고 */
+.header-logo img {
+  width: 9.55rem; /* 153px */
+  height: auto;
+  display: block;
+}
+
+/* 로그인 버튼 */
+.login a {
+  display: inline-block;
+  background-color: #3692ff;
+  color: white;
+  border-radius: 0.5rem; /* 8px */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  width: 8rem; /* 128px */
+  height: 3rem; /* 48px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login a:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* 메인 컨텐츠 */
+main {
+  width: 100%;
+  padding-top: 4.375em; /* 70px */
+  flex: 1;
+}
+
+/* 히어로 */
+.hero {
+  background-color: #cfe5ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 33.75rem; /* 540px */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-container {
+  width: 69.375rem; /* 1110px */
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 3.75em; /* 60px */
+  gap: 2rem; /* 32px */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin: 0;
+  word-break: keep-all;
+}
+
+/* 히어로 버튼 */
+.hero-text a {
+  background-color: #3692ff;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 2.5rem; /* 40px */
+  padding: 1em 7.75em; /* 16px 124px */
+  text-decoration: none;
+  width: fit-content;
+  height: 3.5rem; /* 56px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.hero-text a:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.hero-image img {
+  height: 21.25rem; /* 340px */
+  display: block;
+}
+/* 서비스 소개 */
+.main-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+}
+
+/* 메인 섹션 */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45rem; /* 720px */
+  width: 100%;
+}
+
+.section-container {
+  width: 62.5rem; /* 1000px */
+  padding: 0 0.5em; /* 8px */
+  height: fit-content;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; /* 64px */
+}
+
+section .textbox {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  gap: 0.75rem; /* 12px */
+}
+
+section .eyebrow {
+  color: #3692ff;
+  font-size: 1.125rem;
+  line-height: 1.625em;
+  font-weight: 700;
+  margin: 0;
+}
+
+section .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+section .description {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.625em;
+  margin: 0;
+}
+
+.section-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bottom-banner {
+  background-color: #cfe5ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 33.75rem; /* 540px */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.bottom-banner-container {
+  width: 69.375rem; /* 1110px */
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-banner-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+.bottom-banner-container img {
+  height: 24.8125rem; /* 397px */
+  width: auto;
+  display: block;
+}
+
+footer {
+  width: 100%;
+  height: 10rem; /* 160px*/
+  background-color: #111827;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #9ca3af;
+  padding: 2em 12.5em; /* 32px 200px */
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 120rem; /* 1920px; */
+  height: 1.25rem; /* 20px */
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.policy-faq {
+  display: flex;
+  gap: 1.925rem; /* 30px */
+}
+
+.policy-faq a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.policy-faq a:hover {
+  color: #3692ff;
+  cursor: pointer;
+}
+
+.sns > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0.75rem; /* 12px */
+}

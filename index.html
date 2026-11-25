@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Pretendard 웹폰트 https://www.jsdelivr.com/Package/npm/pretendard -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+
+    <!-- 브라우저 기본 CSS 초기화 CDN 사용 시 주석 해제
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+  >
+-->
+    <!-- 브라우저 기본 CSS 초기화 직접작성본 -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>판다마켓</title>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-TSHG3P3Q"
+    ></script>
+    <!-- 구글 애널리틱스 스크립트 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+    </script>
+  </head>
+
+  <body>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="/">
+            <img src="img/logo/panda_logo_sm_3x.png" alt="판다마켓 로고" />
+          </a>
+        </div>
+
+        <div class="login">
+          <a href="./login.html">로그인</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 -->
+    <main class="main">
+      <!-- 히어로 배너 -->
+      <div class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>
+              일상의 모든 물건을 <br />
+              거래해 보세요
+            </h1>
+            <a href="./items.html">구경하러 가기</a>
+          </div>
+          <div class="hero-image">
+            <img
+              src="img/landing/Img_home_top.png"
+              alt="판다마켓 히어로 배너"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 서비스 소개 -->
+      <div class="main-container">
+        <!-- 인기 상품 -->
+        <section>
+          <div class="section-container">
+            <div class="hot-item-img">
+              <img src="img/landing/Img_home_01.png" alt="인기 상품" />
+            </div>
+            <div class="textbox">
+              <p class="eyebrow">Hot item</p>
+              <h2 class="heading">
+                인기 상품을 <br />
+                확인해 보세요
+              </h2>
+              <p class="description">
+                가장 HOT한 중고거래 물품을 <br />
+                판다 마켓에서 확인해 보세요
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 상품 검색 -->
+        <section>
+          <div class="section-container">
+            <div class="textbox">
+              <p class="eyebrow">Search</p>
+              <h2 class="heading">
+                구매를 원하는 <br />
+                상품을 검색하세요
+              </h2>
+              <p class="description">
+                구매하고 싶은 물품을 검색해서 <br />
+                쉽게 찾아보세요.
+              </p>
+            </div>
+            <div class="section-img">
+              <img src="img/landing/Img_home_02.png" alt="상품 검색" />
+            </div>
+          </div>
+        </section>
+
+        <!-- 상품 등록 -->
+        <section>
+          <div class="section-container">
+            <div class="section-img">
+              <img src="img/landing/Img_home_03.png" alt="상품 등록" />
+            </div>
+            <div class="textbox">
+              <p class="eyebrow">Register</p>
+              <h2 class="heading">
+                판매를 원하는 <br />
+                상품을 등록하세요
+              </h2>
+              <p class="description">
+                어떤 물건이든 판매하고 싶은 상품을 <br />
+                쉽게 등록하세요
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 하단 배너 -->
+      <div class="bottom-banner">
+        <div class="bottom-banner-container">
+          <h1>
+            믿을 수 있는 <br />
+            판다마켓 중고 거래
+          </h1>
+
+          <img src="img/landing/Img_home_bottom.png" alt="판다마켓 하단 배너" />
+        </div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="copyright">
+          <p>©codeit - 2024</p>
+        </div>
+
+        <div class="policy-faq">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+
+        <div class="sns">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="img/gnb/ic_facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="img/gnb/ic_twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="img/gnb/ic_youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><img src="img/gnb/ic_instagram.svg" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
