@@ -1,0 +1,168 @@
+/* 로그인·회원가입 공통 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Pretendard", sans-serif;
+  color: var(--gray-800);
+  background-color: #fcfcfc;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* 40px */
+  width: 100%;
+  max-width: 40rem; /* 640px */
+  margin: 0 auto;
+  padding: 3.75rem 1rem; /* 60px */
+}
+
+.auth-logo {
+  align-self: center;
+}
+
+.auth-logo img {
+  display: block;
+  width: 24.75rem; /* 396px */
+  max-width: 100%;
+  height: auto;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 24px */
+}
+
+/* 입력 칸 */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* 16px */
+}
+
+.field label {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.field input {
+  width: 100%;
+  height: 3.5rem; /* 56px */
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent; /* focus out: 테두리 없음 (자리만 유지해 흔들림 방지) */
+  border-radius: 0.75rem; /* 12px */
+  background-color: var(--gray-100);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--gray-800);
+  outline: none;
+}
+
+.field input::placeholder {
+  color: var(--gray-400);
+}
+
+.field input:focus {
+  border-color: var(--blue-100);
+}
+
+.input-wrap input {
+  padding-right: 4rem; /* 눈 아이콘 자리 */
+}
+
+.btn-visibility {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  display: flex;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* 제출 버튼 */
+
+.btn-submit {
+  height: 3.5rem;
+  border: 0;
+  border-radius: 2.5rem; /* 40px */
+  background-color: var(--gray-400);
+  font: inherit;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  color: var(--gray-100);
+  cursor: pointer;
+}
+
+.btn-submit:disabled {
+  cursor: not-allowed;
+}
+
+.btn-submit:enabled {
+  background-color: var(--blue-100);
+}
+
+.btn-submit:enabled:hover {
+  background-color: var(--blue-200);
+}
+
+/* 간편 로그인 */
+
+.easy-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4375rem; /* 16px 23px */
+  border-radius: 0.5rem;
+  background-color: #e6f2ff;
+}
+
+.easy-login p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+.easy-login-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.easy-login-links img {
+  display: block;
+  width: 2.625rem; /* 42px */
+  height: 2.625rem;
+}
+
+/* 하단 안내 */
+
+.auth-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.auth-switch a {
+  color: var(--blue-100);
+  text-decoration: underline;
+}
