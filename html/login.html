@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link
+      rel="stylesheet"
+      href="/fonts/Pretendard-1.3.9/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>판다마켓 로그인</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FR6G5JTFF1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FR6G5JTFF1");
+    </script>
+  </head>
+  <body>
+    <main>
+      <a href="/index.html">
+        <img src="/img/logo.svg" alt="판다마켓 로고" class="logo" />
+      </a>
+      <form class="login-form">
+        <div class="input-group">
+          <label>이메일</label>
+          <input type="email" placeholder="이메일을 입력해 주세요." required />
+        </div>
+        <div class="input-group">
+          <label>비밀번호</label>
+          <div class="password-input">
+            <input
+              type="password"
+              placeholder="비밀번호를 입력해 주세요."
+              required
+            />
+            <img src="/img/btn_visibility_on_24px.svg" alt="비밀번호 숨김" />
+          </div>
+        </div>
+        <button type="submit">로그인</button>
+      </form>
+      <div class="social-login">
+        <div class="social-login-content">
+          <p>간편 로그인하기</p>
+          <div class="social-login-icons">
+            <a href="https://www.google.com/">
+              <img src="/img/Component 2 (1).svg" alt="Google 로그인" />
+            </a>
+            <a href="https://www.kakaocorp.com/page/">
+              <img src="/img/Component 3.svg" alt="Kakao 로그인" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="signup">
+        <span>판다마켓이 처음이신가요? </span>
+        <a href="/html/signup.html">회원가입</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_inner">
+        <p>©codeit - 2024</p>
+
+        <div class="footer_links">
+          <a href="/html/privacy.html">Privacy Policy</a>
+          <a href="/html/faq.html">FAQ</a>
+        </div>
+
+        <div class="footer_sns">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="/img/ic_facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="/img/Vector.svg" alt="Twitter" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="/img/ic_youtube.svg" alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="/img/ic_instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
