@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+}
+/* 로고,로그인 바 */
+.container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 200px;
+  width: 100%;
+  height: 70px;
+
+  background-color: white;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1520px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3692ff;
+  color: white;
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+/* 시퀀스1 인기 상품 */
+.hero {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  background-color: #cfe5ff;
+  height: 540px;
+  color: #374151;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+
+  width: 100%;
+  max-width: 1520px;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 100px;
+
+  flex-shrink: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 357px;
+  height: 64px;
+  flex-shrink: 0;
+  background-color: #3692ff;
+  color: white;
+  padding: 16px 124px;
+  font-size: 20px;
+  line-height: 32px;
+  align-content: center;
+  border-radius: 40px;
+  gap: 10px;
+  text-decoration: none;
+}
+/* 시퀀스2 구매 */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2%;
+  line-height: 140%;
+  height: 720px;
+  min-height: 720px;
+  color: #374151;
+}
+
+.background-1 {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: 988px;
+  height: 444px;
+  background-color: #fcfcfc;
+  text-align: left;
+}
+.background-1 > img {
+  width: 588px;
+  height: 444px;
+  flex-shrink: 0;
+}
+
+.best {
+  color: #3692ff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.hot-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+  flex-shrink: 0;
+}
+/* 시퀀스3 */
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 720px;
+}
+
+.search-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  width: 988px;
+  height: 444px;
+  background-color: #fcfcfc;
+}
+
+.item-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #374151;
+  text-align: right;
+
+  flex-shrink: 0;
+}
+
+/* 돋보기 이미지 */
+.search-inner img {
+  width: 588px;
+  flex-shrink: 0;
+  height: 444px;
+}
+
+/* 글씨 옵션 */
+.search {
+  color: #3692ff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+/* 시퀀스4 */
+
+.item-sell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 720px;
+}
+
+.sell-inner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: 988px;
+  height: 444px;
+  background-color: #fcfcfc;
+}
+.sell-inner img {
+  width: 588px;
+  height: 444px;
+  flex-shrink: 0;
+}
+
+.sell-register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.register {
+  color: #3692ff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.register2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+/* 시퀀스5 */
+
+.hero2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 69px;
+  background-color: #cfe5ff;
+  height: 540px;
+}
+
+.hero2-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #374151;
+}
+
+/* 시퀀스6 footer */
+.footer {
+  background-color: #111827;
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  padding-top: 32px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: calc(100% - 400px);
+  max-width: 1520px;
+  min-width: 650px;
+}
+
+.codeit {
+  color: #9ca3af;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.faq {
+  display: flex;
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  line-height: 100%;
+  font-weight: 400;
+  gap: 30px;
+
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.privacry {
+  display: flex;
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.faq a {
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  flex-shrink: 0;
+  gap: 12px;
+}
+
+a {
+  cursor: pointer;
+}
