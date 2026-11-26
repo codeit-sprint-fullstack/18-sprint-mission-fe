@@ -1,0 +1,289 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Pretendard Std Variable",
+    "Pretendard Std", Pretendard, Roboto, "Segoe UI", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.nav-var {
+  width: 100%;
+  max-width: 1920px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.nav-content {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-btn {
+  background-color: #3692ff;
+  width: 128px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background-color: rgb(123, 191, 250);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8.59px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-txt {
+  color: #3692ff;
+  font-weight: 700;
+  font-size: 25.63px;
+}
+
+.hero {
+  background-color: #cfe5ff;
+  width: 100vw;
+  height: 540px;
+  margin-top: 70px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 1110px;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+  padding-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 40px;
+  font-weight: 700;
+  color: #374151;
+  margin: 0;
+}
+
+.items-btn {
+  width: 357px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3692ff;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.items-btn:hover {
+  cursor: pointer;
+  background-color: rgb(123, 191, 250);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1920px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-content {
+  width: 988px;
+  height: 444px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.info {
+  width: 317px;
+  height: auto;
+}
+
+.badge {
+  color: #3692ff;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.sub-title {
+  color: #374151;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  line-height: 140%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.description {
+  width: 100%;
+  color: #374151;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.bottom-container {
+  background-color: #cfe5ff;
+  width: 100vw;
+  height: 540px;
+  margin: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.bottom-content {
+  max-width: 1110px;
+
+  width: 100%;
+  height: 397px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar {
+  background-color: #111827;
+  width: 100vw;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.copyright {
+  color: #9ca3af;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  color: #e5e7eb;
+}
+
+.social-item {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-link:hover {
+  cursor: pointer;
+}
+
+.bottom-container .sub-title {
+  width: 350px;
+}

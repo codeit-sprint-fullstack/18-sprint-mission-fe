@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="logo-link">
+        <img src="../image/login_logo.png" alt="logo" />
+      </a>
+      <div class="login-form">
+        <form action="/signup" method="post">
+          <div class="input-container">
+            <p>이메일</p>
+            <input
+              type="email"
+              class="input-field"
+              name="email"
+              placeholder="이메일을 입력해주세요"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <p>닉네임</p>
+            <input
+              type="text"
+              class="input-field"
+              name="nickname"
+              placeholder="닉네임을 입력해주세요"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <p>비밀번호</p>
+            <div class="password-wrapper">
+              <input
+                type="password"
+                class="input-field"
+                name="password"
+                placeholder="비밀번호를 입력해주세요"
+                required
+              />
+              <button
+                type="button"
+                class="password-toggle-button"
+                aria-label="비밀번호 표시 전환"
+              >
+                <img src="../image/eye-off.png" alt="비밀번호 숨기기" />
+              </button>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <p>비밀번호 확인</p>
+            <div class="password-wrapper">
+              <input
+                type="password"
+                class="input-field"
+                name="password-confirm"
+                placeholder="비밀번호를 다시 한 번 입력해주세요"
+                required
+              />
+              <button
+                type="button"
+                class="password-toggle-button"
+                aria-label="비밀번호 확인 표시 전환"
+              >
+                <img src="../image/eye-off.png" alt="비밀번호 숨기기" />
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="login-button">회원가입</button>
+        </form>
+
+        <div class="social-login">
+          <div class="social-container">
+            <p class="simple-login-text">간편 로그인하기</p>
+            <div class="social-login-buttons">
+              <a
+                href="https://www.google.com/"
+                class="social-button-google"
+                aria-label="Google 간편 로그인"
+              >
+                <img src="../image/google-icon.png" alt="Google" />
+              </a>
+              <a
+                href="https://www.kakaocorp.com/page/"
+                class="social-button-kakao"
+                aria-label="Kakao 간편 로그인"
+              >
+                <img src="../image/kakao-icon.png" alt="Kakao" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="signup-guide">
+          이미 회원이신가요?
+          <a href="../login/login.html" class="signup-link">로그인</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
