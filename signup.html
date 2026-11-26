@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>판다마켓 회원가입</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-5MGQZ6VG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="logo-container">
+        <a href="/">
+          <img src="img/img_logo.png" alt="판다마켓 로고" class="logo-img"
+        /></a>
+        <img
+          src="img/img_logo_text.svg"
+          alt="판다마켓 로고 텍스트"
+          class="logo-text-img"
+        />
+      </div>
+      <div class="auth-container">
+        <div class="input-container">
+          <label for="email" class="input-label">이메일</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              class="input-field"
+              placeholder="이메일을 입력해주세요"
+            />
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="email" class="input-label">닉네임</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="nickname"
+              class="input-field"
+              placeholder="닉네임을 입력해주세요"
+            />
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="password" class="input-label">비밀번호</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              class="input-field"
+              placeholder="비밀번호를 입력해주세요"
+            />
+            <img
+              src="img/eye_icon.svg"
+              alt="비밀번호 보기"
+              class="password-eye"
+            />
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="password" class="input-label">비밀번호 확인</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              class="input-field"
+              placeholder="비밀번호를 다시 한 번 입력해주세요"
+            />
+            <img
+              src="img/eye_icon.svg"
+              alt="비밀번호 보기"
+              class="password-eye"
+            />
+          </div>
+        </div>
+        <div class="login-button">
+          <p class="signup-button-text">회원가입</p>
+        </div>
+        <div class="simple-login-container">
+          <p class="">간편 로그인하기</p>
+          <div class="simple-login-img-container">
+            <a href="https://www.google.com">
+              <img
+                src="img/img_google_color.svg"
+                alt="구글 로고"
+                class="google-img"
+              />
+            </a>
+            <a href="https://www.kakaocorp.com/page/">
+              <img
+                src="img/img_kakao_color.svg"
+                alt="카카오 로고"
+                class="kakao-img"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="auth-link-container">
+          <p>이미 회원이신가요?</p>
+          <a href="login.html" class="auth-link">로그인</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
